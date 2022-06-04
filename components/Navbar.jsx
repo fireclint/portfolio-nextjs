@@ -48,7 +48,7 @@ const Navbar = () => {
       style={{ backgroundColor: `${navBg}` }}
       className={
         shadow
-          ? 'fixed w-full h-20 shadow-xl z-[100]'
+          ? 'fixed w-full h-20 shadow-xl z-[100] ease-in-out duration-300'
           : 'fixed w-full h-20 z-[100]'
       }
     >
@@ -59,6 +59,7 @@ const Navbar = () => {
             alt='/'
             width='125'
             height='50'
+            className='cursor-pointer'
           />
         </Link>
         <div>
@@ -77,23 +78,36 @@ const Navbar = () => {
                 Projects
               </li>
             </Link>
+            <Link href="/resume">
+            <li className='ml-10 text-sm uppercase hover:border-b'>
+                Resume
+              </li>
+            </Link>
             <Link href='/#contact'>
               <li className='ml-10 text-sm uppercase hover:border-b'>
                 Contact
               </li>
             </Link>
           </ul>
-          <div onClick={handleNav} className='md:hidden'>
+          {/* Hamburger Icon */}
+          <div
+            style={{ color: `${linkColor}` }}
+            onClick={handleNav}
+            className='md:hidden'
+          >
             <AiOutlineMenu size={25} />
           </div>
         </div>
       </div>
 
+      {/* Mobile Menu */}
+      {/* Overlay */}
       <div
         className={
           nav ? 'md:hidden fixed left-0 top-0 w-full h-screen bg-black/70' : ''
         }
       >
+        {/* Side Drawer Menu */}
         <div
           className={
             nav
@@ -157,18 +171,32 @@ const Navbar = () => {
                 Let's Connect
               </p>
               <div className='flex items-center justify-between my-4 w-full sm:w-[80%]'>
-                <div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300'>
-                  <FaLinkedinIn />
-                </div>
-                <div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300'>
-                  <FaGithub />
-                </div>
-                <div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300'>
-                  <AiOutlineMail />
-                </div>
-                <div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300'>
-                  <BsFillPersonLinesFill />
-                </div>
+                <a
+                  href='https://www.linkedin.com/in/clint-briley-50056920a/'
+                  target='_blank'
+                >
+                  <div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300'>
+                    <FaLinkedinIn />
+                  </div>
+                </a>
+                <a
+                  href='https://github.com/fireclint'
+                  target='_blank'
+                >
+                  <div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300'>
+                    <FaGithub />
+                  </div>
+                </a>
+                <Link href='/#contact'>
+                  <div onClick={()=>setNav(!nav)} className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300'>
+                    <AiOutlineMail />
+                  </div>
+                </Link>
+                <Link href='/resume'>
+                  <div onClick={()=>setNav(!nav)} className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300'>
+                    <BsFillPersonLinesFill />
+                  </div>
+                </Link>
               </div>
             </div>
           </div>
