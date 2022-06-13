@@ -43,7 +43,7 @@ const Contact = () => {
                 <p>Front-End Developer</p>
                 <p className='py-4'>
                   I am available for freelance or full-time positions. Contact
-                  me and let's talk.
+                  me and let&apos;s talk.
                 </p>
               </div>
               <div>
@@ -52,12 +52,17 @@ const Contact = () => {
                   <a
                     href='https://www.linkedin.com/in/clint-briley-50056920a/'
                     target='_blank'
+                    rel='noreferrer'
                   >
                     <div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300'>
                       <FaLinkedinIn />
                     </div>
                   </a>
-                  <a href='https://github.com/fireclint' target='_blank'>
+                  <a
+                    href='https://github.com/fireclint'
+                    target='_blank'
+                    rel='noreferrer'
+                  >
                     <div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300'>
                       <FaGithub />
                     </div>
@@ -67,9 +72,11 @@ const Contact = () => {
                     <AiOutlineMail />
                   </div>
                   <Link href='/resume'>
-                    <div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300'>
-                      <BsFillPersonLinesFill />
-                    </div>
+                    <a>
+                      <div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300'>
+                        <BsFillPersonLinesFill />
+                      </div>
+                    </a>
                   </Link>
                 </div>
               </div>
@@ -147,9 +154,14 @@ const Contact = () => {
         </div>
         <div className='flex justify-center py-12'>
           <Link href='/'>
-            <div className='rounded-full shadow-lg shadow-gray-400 p-4 cursor-pointer hover:scale-110 ease-in duration-300'>
-              <HiOutlineChevronDoubleUp className='text-[#5651e5]' size={30} />
-            </div>
+            <a>
+              <div className='rounded-full shadow-lg shadow-gray-400 p-4 cursor-pointer hover:scale-110 ease-in duration-300'>
+                <HiOutlineChevronDoubleUp
+                  className='text-[#5651e5]'
+                  size={30}
+                />
+              </div>
+            </a>
           </Link>
         </div>
       </div>

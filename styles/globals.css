@@ -2,8 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
 html {
   scroll-behavior: smooth;
+  font-family: 'Raleway', sans-serif;
 }
 
 @layer base {
@@ -16,7 +20,7 @@ html {
   }
 
   h1 {
-    @apply text-4xl sm:text-5xl md:text-6xl
+    @apply text-4xl sm:text-5xl md:text-6xl font-[Raleway]
   }
 
   h2 {

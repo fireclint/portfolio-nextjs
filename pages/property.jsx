@@ -32,12 +32,24 @@ const property = () => {
             to retrieve a list of active properties currently for sale. You will
             be able to view property information as well as the specific
             location of the property integrated with the Google Maps API. User
-            authentication is available so you can signup & signin to your
+            authentication is available so you can signup and signin to your
             account with an email address in order to save your favorite
             properties. This is made possible with Zillow API.
           </p>
-          <button className='px-8 py-2 mt-4 mr-8'>Demo</button>
-          <button className='px-8 py-2 mt-4'>Code</button>
+          <a
+            href='https://property-finder-development.web.app/'
+            target='_blank'
+            rel='noreferrer'
+          >
+            <button className='px-8 py-2 mt-4 mr-8'>Demo</button>
+          </a>
+          <a
+            href='https://github.com/fireclint/property-finder'
+            target='_blank'
+            rel='noreferrer'
+          >
+            <button className='px-8 py-2 mt-4'>Code</button>
+          </a>
         </div>
         <div className='col-span-4 md:col-span-1 shadow-xl shadow-gray-400 rounded-xl p-4'>
           <div className='p-2'>
@@ -65,7 +77,7 @@ const property = () => {
           </div>
         </div>
         <Link href='/#projects'>
-            <p className='underline cursor-pointer'>Back</p>
+          <p className='underline cursor-pointer'>Back</p>
         </Link>
       </div>
     </div>

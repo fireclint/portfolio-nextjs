@@ -5,6 +5,7 @@ import { AiOutlineClose, AiOutlineMail, AiOutlineMenu } from 'react-icons/ai';
 import { FaGithub, FaLinkedinIn } from 'react-icons/fa';
 import { BsFillPersonLinesFill } from 'react-icons/bs';
 import { useRouter } from 'next/router';
+import NavLogo from '../public/assets/navLogo.png'
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
@@ -54,40 +55,36 @@ const Navbar = () => {
     >
       <div className='flex justify-between items-center w-full h-full px-2 2xl:px-16'>
         <Link href='/'>
-          <Image
-            src='/../public/assets/navLogo.png'
-            alt='/'
-            width='125'
-            height='50'
-            className='cursor-pointer'
-          />
+          <a>
+            <Image
+              src={NavLogo}
+              alt='/'
+              width='125'
+              height='50'
+              className='cursor-pointer'
+            />
+          </a>
         </Link>
         <div>
           <ul style={{ color: `${linkColor}` }} className='hidden md:flex'>
-            <Link href='/'>
-              <li className='ml-10 text-sm uppercase hover:border-b'>Home</li>
-            </Link>
-            <Link href='/#about'>
-              <li className='ml-10 text-sm uppercase hover:border-b'>About</li>
-            </Link>
-            <Link href='/#skills'>
-              <li className='ml-10 text-sm uppercase hover:border-b'>Skills</li>
-            </Link>
-            <Link href='/#projects'>
-              <li className='ml-10 text-sm uppercase hover:border-b'>
-                Projects
-              </li>
-            </Link>
-            <Link href="/resume">
             <li className='ml-10 text-sm uppercase hover:border-b'>
-                Resume
-              </li>
-            </Link>
-            <Link href='/#contact'>
-              <li className='ml-10 text-sm uppercase hover:border-b'>
-                Contact
-              </li>
-            </Link>
+              <Link href='/'>Home</Link>
+            </li>
+            <li className='ml-10 text-sm uppercase hover:border-b'>
+              <Link href='/#about'>About</Link>
+            </li>
+            <li className='ml-10 text-sm uppercase hover:border-b'>
+              <Link href='/#skills'>Skills</Link>
+            </li>
+            <li className='ml-10 text-sm uppercase hover:border-b'>
+              <Link href='/#projects'>Projects</Link>
+            </li>
+            <li className='ml-10 text-sm uppercase hover:border-b'>
+              <Link href='/resume'>Resume</Link>
+            </li>
+            <li className='ml-10 text-sm uppercase hover:border-b'>
+              <Link href='/#contact'>Contact</Link>
+            </li>
           </ul>
           {/* Hamburger Icon */}
           <div
@@ -118,12 +115,14 @@ const Navbar = () => {
           <div>
             <div className='flex w-full items-center justify-between'>
               <Link href='/'>
-                <Image
-                  src='/../public/assets/navLogo.png'
-                  width='87'
-                  height='35'
-                  alt='/'
-                />
+                <a>
+                  <Image
+                    src={NavLogo}
+                    width='87'
+                    height='35'
+                    alt='/'
+                  />
+                </a>
               </Link>
               <div
                 onClick={handleNav}
@@ -134,7 +133,7 @@ const Navbar = () => {
             </div>
             <div className='border-b border-gray-300 my-4'>
               <p className='w-[85%] md:w-[90%] py-4'>
-                Let's build something legendary together
+                Let&#39;s build something legendary together
               </p>
             </div>
           </div>
@@ -168,12 +167,13 @@ const Navbar = () => {
             </ul>
             <div className='pt-40'>
               <p className='uppercase tracking-widest text-[#5651e5]'>
-                Let's Connect
+                Let&#39;s Connect
               </p>
               <div className='flex items-center justify-between my-4 w-full sm:w-[80%]'>
                 <a
                   href='https://www.linkedin.com/in/clint-briley-50056920a/'
                   target='_blank'
+                  rel='noreferrer'
                 >
                   <div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300'>
                     <FaLinkedinIn />
@@ -182,18 +182,25 @@ const Navbar = () => {
                 <a
                   href='https://github.com/fireclint'
                   target='_blank'
+                  rel='noreferrer'
                 >
                   <div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300'>
                     <FaGithub />
                   </div>
                 </a>
                 <Link href='/#contact'>
-                  <div onClick={()=>setNav(!nav)} className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300'>
+                  <div
+                    onClick={() => setNav(!nav)}
+                    className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300'
+                  >
                     <AiOutlineMail />
                   </div>
                 </Link>
                 <Link href='/resume'>
-                  <div onClick={()=>setNav(!nav)} className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300'>
+                  <div
+                    onClick={() => setNav(!nav)}
+                    className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300'
+                  >
                     <BsFillPersonLinesFill />
                   </div>
                 </Link>

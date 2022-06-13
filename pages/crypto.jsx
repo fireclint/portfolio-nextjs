@@ -32,12 +32,24 @@ const crypto = () => {
             to retrieve a list of active properties currently for sale. You will
             be able to view property information as well as the specific
             location of the property integrated with the Google Maps API. User
-            authentication is available so you can signup & signin to your
+            authentication is available so you can signup and signin to your
             account with an email address in order to save your favorite
             properties. This is made possible with Zillow API.
           </p>
-          <button className='px-8 py-2 mt-4 mr-8'>Demo</button>
-          <button className='px-8 py-2 mt-4'>Code</button>
+          <a
+            href='https://cryptobase-yt.web.app/'
+            target='_blank'
+            rel='noreferrer'
+          >
+            <button className='px-8 py-2 mt-4 mr-8'>Demo</button>
+          </a>
+          <a
+            href='https://github.com/fireclint/crypto-react-firebase'
+            target='_blank'
+            rel='noreferrer'
+          >
+            <button className='px-8 py-2 mt-4'>Code</button>
+          </a>
         </div>
         <div className='col-span-4 md:col-span-1 shadow-xl shadow-gray-400 rounded-xl p-4'>
           <div className='p-2'>
@@ -56,10 +68,10 @@ const crypto = () => {
                 <RiRadioButtonFill className='pr-1' /> Firebase
               </p>
               <p className='text-gray-600 py-2 flex items-center'>
-                <RiRadioButtonFill className='pr-1' /> Google API
+                <RiRadioButtonFill className='pr-1' /> Coin Gecko API
               </p>
               <p className='text-gray-600 py-2 flex items-center'>
-                <RiRadioButtonFill className='pr-1' /> Zillow API
+                <RiRadioButtonFill className='pr-1' /> Routes
               </p>
             </div>
           </div>

@@ -10,10 +10,10 @@ const Main = () => {
       <div className='max-w-[1240px] w-full h-full mx-auto p-2 flex justify-center items-center'>
         <div>
           <p className='uppercase text-sm tracking-widest text-gray-600'>
-            LET'S BUILD SOMETHING TOGETHER
+            LET&#39;S BUILD SOMETHING TOGETHER
           </p>
           <h1 className='py-4 text-gray-700'>
-            Hi, I'm <span className='text-[#5651e5]'> Clint</span>
+            Hi, I&#39;m <span className='text-[#5651e5]'> Clint</span>
           </h1>
           <h1 className='py-2 text-gray-700'>A Front-End Web Developer</h1>
           <p className='py-4 text-gray-600 max-w-[70%] m-auto'>
@@ -26,12 +26,13 @@ const Main = () => {
             <a
               href='https://www.linkedin.com/in/clint-briley-50056920a/'
               target='_blank'
+              rel="noreferrer"
             >
               <div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300'>
                 <FaLinkedinIn />
               </div>
             </a>
-            <a href='https://github.com/fireclint' target='_blank'>
+            <a href='https://github.com/fireclint' target='_blank' rel="noreferrer">
               <div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300'>
                 <FaGithub />
               </div>

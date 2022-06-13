@@ -1,5 +1,5 @@
 import React from 'react';
-import Head from 'next/head'
+import Head from 'next/head';
 import { FaGithub, FaLinkedinIn } from 'react-icons/fa';
 
 const resume = () => {
@@ -22,10 +22,15 @@ const resume = () => {
             <a
               href='https://www.linkedin.com/in/clint-briley-50056920a/'
               target='_blank'
+              rel='noreferrer'
             >
               <FaLinkedinIn size={20} style={{ marginRight: '1rem' }} />
             </a>
-            <a href='https://github.com/fireclint' target='_blank'>
+            <a
+              href='https://github.com/fireclint'
+              target='_blank'
+              rel='noreferrer'
+            >
               <FaGithub size={20} style={{ marginRight: '1rem' }} />
             </a>
           </div>
