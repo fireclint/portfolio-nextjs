@@ -8,7 +8,7 @@ const twitch = () => {
   return (
     <div className='w-full'>
       <div className='w-screen h-[30vh] lg:h-[40vh] relative'>
-        <div className='absolute top-0 left-0 w-full h-[30vh] lg:h-[40vh] bg-black/80 z-10' />
+        <div className='absolute top-0 left-0 w-full h-[30vh] lg:h-[40vh] bg-black/50 z-10' />
         <Image
           className='absolute z-1'
           layout='fill'
@@ -36,8 +36,20 @@ const twitch = () => {
             account with an email address in order to save your favorite
             properties. This is made possible with Zillow API.
           </p>
-          <button className='px-8 py-2 mt-4 mr-8'>Demo</button>
-          <button className='px-8 py-2 mt-4'>Code</button>
+          <a
+            href='https://github.com/fireclint/twitch-nextjs-tailwind'
+            target='_blank'
+            rel='noreferrer'
+          >
+            <button className='px-8 py-2 mt-4 mr-8'>Code</button>
+          </a>
+          <a
+            href='https://twitch-nextjs-tailwind.vercel.app/'
+            target='_blank'
+            rel='noreferrer'
+          >
+            <button className='px-8 py-2 mt-4 mr-8'>Demo</button>
+          </a>
         </div>
         <div className='col-span-4 md:col-span-1 shadow-xl shadow-gray-400 rounded-xl p-4'>
           <div className='p-2'>
