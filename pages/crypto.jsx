@@ -27,14 +27,15 @@ const crypto = () => {
           <p>Project</p>
           <h2>Overview</h2>
           <p>
-            This app was built using React JS and is hosted on Firebase. Users
-            are able to search properties based on an Address, City, or ZIP code
-            to retrieve a list of active properties currently for sale. You will
-            be able to view property information as well as the specific
-            location of the property integrated with the Google Maps API. User
-            authentication is available so you can signup and signin to your
-            account with an email address in order to save your favorite
-            properties. This is made possible with Zillow API.
+            I built this app to demonstrate knowledge working in React JS and
+            accessing API endpoints. This app was built using React JS and is
+            hosted on Firebase. This application supports user authentication
+            using firebase. Users are able to create a new account using their
+            email address and can then sign in to save coins to a user specific
+            list. This is made possble by creating a firestore cloud storage
+            database at the time of user registration. Another feature of this
+            application is dynamic routing through the "React Router DOM"
+            package. This application was built using the Coin Gecko API.
           </p>
           <a
             href='https://cryptobase-yt.web.app/'

@@ -27,14 +27,13 @@ const twitch = () => {
           <p>Project</p>
           <h2>Overview</h2>
           <p>
-            This app was built using React JS and is hosted on Firebase. Users
-            are able to search properties based on an Address, City, or ZIP code
-            to retrieve a list of active properties currently for sale. You will
-            be able to view property information as well as the specific
-            location of the property integrated with the Google Maps API. User
-            authentication is available so you can signup and signin to your
-            account with an email address in order to save your favorite
-            properties. This is made possible with Zillow API.
+            This appplication was built using NEXT.JS and is styled with
+            Tailwind CSS. The application is hosted statically using Vercel.
+            This is a mobile responsive recreation of Twitch.tv and features
+            Next/Auth.js for authentication. Users may choose to be
+            authenticated with either a Github account or a Google account. A
+            few features to note with this project are lazy loading images using
+            the Image component, built in routing, and Next/Auth Context.
           </p>
           <a
             href='https://github.com/fireclint/twitch-nextjs-tailwind'
@@ -71,7 +70,7 @@ const twitch = () => {
                 <RiRadioButtonFill className='pr-1' /> Github Auth
               </p>
               <p className='text-gray-600 py-2 flex items-center'>
-                <RiRadioButtonFill className='pr-1' /> Google API
+                <RiRadioButtonFill className='pr-1' /> Google Auth
               </p>
             </div>
           </div>

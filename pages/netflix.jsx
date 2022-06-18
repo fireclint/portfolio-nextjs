@@ -27,20 +27,18 @@ const netflix = () => {
           <p>Project</p>
           <h2>Overview</h2>
           <p>
-            This app was built using React JS and is hosted on Firebase. Users
-            are able to search properties based on an Address, City, or ZIP code
-            to retrieve a list of active properties currently for sale. You will
-            be able to view property information as well as the specific
-            location of the property integrated with the Google Maps API. User
-            authentication is available so you can signup and signin to your
-            account with an email address in order to save your favorite
-            properties. This is made possible with Zillow API.
+            I built this application in React JS and is hosted on GitHub pages.
+            This app features user authentication with firebase as well as the
+            firestore cloud storage database. This application is pulling movie
+            data from an the IMDB movie API and displaying different categories.
+            It features horizontal sliding and a featured selection. The
+            useContext hook is also being implemented for app-wide state
+            management.
           </p>
           <a
             href='https://fireclint.github.io/netflix-react-tailwind/'
             target='_blank'
             rel='noreferrer'
-
           >
             <button className='px-8 py-2 mt-4 mr-8'>Demo</button>
           </a>
@@ -48,7 +46,6 @@ const netflix = () => {
             href='https://github.com/fireclint/netflix-react-tailwind'
             target='_blank'
             rel='noreferrer'
-
           >
             <button className='px-8 py-2 mt-4'>Code</button>
           </a>
@@ -70,10 +67,7 @@ const netflix = () => {
                 <RiRadioButtonFill className='pr-1' /> Firebase
               </p>
               <p className='text-gray-600 py-2 flex items-center'>
-                <RiRadioButtonFill className='pr-1' /> Google API
-              </p>
-              <p className='text-gray-600 py-2 flex items-center'>
-                <RiRadioButtonFill className='pr-1' /> Zillow API
+                <RiRadioButtonFill className='pr-1' /> IMDB API
               </p>
             </div>
           </div>
