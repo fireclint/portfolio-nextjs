@@ -1,5 +1,7 @@
 import React from 'react';
-import Link from 'next/link'
+import Image from 'next/image';
+import Link from 'next/link';
+import AboutImg from '../public/assets/about.jpg';
 
 const About = () => {
   return (
@@ -17,9 +19,9 @@ const About = () => {
             I have spent the last 12 years in the fire service working as a
             professional firefighter/paramedic. I have always had a knack for
             technology and working with computers. In 2019 I started working
-            with HTML and CSS to make some minor edits on a small business website
-            that I was operating. What I thought was just a few small edits
-            turned into a love for programming.
+            with HTML and CSS to make some minor edits on a small business
+            website that I was operating. What I thought was just a few small
+            edits turned into a love for programming.
           </p>
           <p className='py-2 text-gray-600'>
             Fascinated with how intricate programming can be I was quickly drawn
@@ -36,11 +38,7 @@ const About = () => {
           </Link>
         </div>
         <div className='w-full h-auto m-auto shadow-xl shadow-gray-400 rounded-xl flex items-center justify-center p-4 hover:scale-105 ease-in duration-300'>
-          <img
-            className='rounded-xl'
-            src='https://images.unsplash.com/photo-1525547719571-a2d4ac8945e2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1364&q=80'
-            alt='/'
-          />
+          <Image src={AboutImg} className='rounded-xl' alt='/' />
         </div>
       </div>
     </div>
