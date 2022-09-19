@@ -66,10 +66,17 @@ const resume = () => {
           <p className='py-2'>
             <span className='font-bold'>Technical Skills</span>
             <span className='px-2'>|</span>Front-End Web Developer
-            <span className='px-2'>|</span> HTML <span className='px-2'>|</span>
-            CSS <span className='px-2'>|</span>React
+            <span className='px-2'>|</span> HTML
+            <span className='px-2'>|</span>CSS
+            <span className='px-2'>|</span>Javascript
+            <span className='px-2'>|</span>React
+            <span className='px-2'>|</span>Next JS
+            <span className='px-2'>|</span>SQL
+            <span className='px-2'>|</span>NoSQL
+            <span className='px-2'>|</span>Redux
             <span className='px-2'>|</span>Tailwind
             <span className='px-2'>|</span> Firebase
+            <span className='px-2'>|</span> RESTAPI
           </p>
           <p className='py-2'>
             <span className='font-bold'>Amazon Web Services</span>
@@ -109,6 +116,37 @@ const resume = () => {
             </li>
           </ul>
         </div>
+        <h5 className='text-center underline text-[18px] py-4'>
+          Personal Experience
+        </h5>
+
+        {/* Personal Experience */}
+        <div className='py-6'>
+          <p className='italic'>
+            <span className='font-bold italic'>
+              Teaching & Mentoring Web Development
+            </span>
+            <span className='px-2'>|</span>Dallas, TX
+          </p>
+          <p className='py-1 italic'>Freelance Work (2021 - Current)</p>
+          <ul className='list-disc list-outside px-7 py-1 leading-relaxed'>
+            <li>
+              In 2021 I started “Code Commerce”, a YouTube channel focused on
+              sharing what I’m learning in web development, specifically
+              front-end development.
+            </li>
+            <li>
+              Private 1 on 1 Zoom coaching calls related to web development.
+              More specifically debugging, teaching basic web development
+              concepts and code reviews.
+            </li>
+          </ul>
+        </div>
+
+        {/*  */}
+        <h5 className='text-center underline text-[18px] py-4'>
+          Other Professional Experience
+        </h5>
         {/* Experience */}
         <div className='py-6'>
           <p className='italic'>
