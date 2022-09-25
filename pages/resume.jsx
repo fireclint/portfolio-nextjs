@@ -92,11 +92,11 @@ const resume = () => {
         <div className='py-6'>
           <p className='italic'>
             <span className='font-bold italic'>
-              BIGCOMMERCE, SHOPIFY, WOOCOMMERCE
+            INFINITE TECH
             </span>
             <span className='px-2'>|</span>Dallas, TX
           </p>
-          <p className='py-1 italic'>Freelance Work (2013 - Current)</p>
+          <p className='py-1 italic'>Front End Web Developer & Web Master (2013 - Current)</p>
           <ul className='list-disc list-outside px-7 py-1 leading-relaxed'>
             <li>
               Ensured comprehensive mobile responsive UI layouts with
@@ -116,9 +116,7 @@ const resume = () => {
             </li>
           </ul>
         </div>
-        <h5 className='text-center underline text-[18px] py-4'>
-          Personal Experience
-        </h5>
+
 
         {/* Personal Experience */}
         <div className='py-6'>
@@ -128,7 +126,7 @@ const resume = () => {
             </span>
             <span className='px-2'>|</span>Dallas, TX
           </p>
-          <p className='py-1 italic'>Freelance Work (2021 - Current)</p>
+          <p className='py-1 italic'>Code Commerce - Youtube Channel (2021 - Current)</p>
           <ul className='list-disc list-outside px-7 py-1 leading-relaxed'>
             <li>
               In 2021 I started “Code Commerce”, a YouTube channel focused on
@@ -147,32 +145,7 @@ const resume = () => {
         <h5 className='text-center underline text-[18px] py-4'>
           Other Professional Experience
         </h5>
-        {/* Experience */}
-        <div className='py-6'>
-          <p className='italic'>
-            <span className='font-bold'>Preston EMS</span>
-            <span className='px-2'>|</span>Grayson County, TX
-          </p>
-          <p className='py-1 italic'>Paramedic (2019 - Current)</p>
-          <ul className='list-disc list-outside px-7 py-1 leading-relaxed'>
-            <li>
-              Lead paramedic on an ALS 911 ambulance covering rural Grayson
-              County.
-            </li>
-            <li>
-              Work surrounding departments organizing treatment protocols and
-              facilitate hands on training operations.
-            </li>
-            <li>
-              Manage high stress 911 situations such as medical emergencies,
-              traumatic emergencies, and water accidents
-            </li>
-            <li>
-              Public outreach and relations for the municipality from healthcare
-              awareness to training methods.
-            </li>
-          </ul>
-        </div>
+      
         {/* Experience */}
         <div className='py-6'>
           <p className='italic'>
