@@ -13,9 +13,6 @@ const About = () => {
           </p>
           <h2 className='py-4'>Who I Am</h2>
           <p className='py-2 text-gray-600'>
-            / / I am not your average developer
-          </p>
-          <p className='py-2 text-gray-600'>
             I specialize in building mobile responsive front-end UI applications
             that connect with API’s &amp; other backend technologies. I’m passionate
             about learning new technologies and understand there is more than
