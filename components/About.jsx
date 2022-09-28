@@ -16,20 +16,22 @@ const About = () => {
             / / I am not your average developer
           </p>
           <p className='py-2 text-gray-600'>
-            I have spent the last 12 years in the fire service working as a
-            professional firefighter/paramedic. I have always had a knack for
-            technology and working with computers. In 2019 I started working
-            with HTML and CSS to make some minor edits on a small business
-            website that I was operating. What I thought was just a few small
-            edits turned into a love for programming.
+            I specialize in building mobile responsive front-end UI applications
+            that connect with API’s &amp; other backend technologies. I’m passionate
+            about learning new technologies and understand there is more than
+            one way to accomplish a task. Though I am most proficient in
+            building front-end applications using HTML, CSS, Javascript, &amp;
+            React, I am a quick learner and can pick up new tech stacks as
+            needed. I believe that being a great developer is not using one
+            specific language, but choosing the best tool for the job.
           </p>
           <p className='py-2 text-gray-600'>
-            Fascinated with how intricate programming can be I was quickly drawn
-            to learn more. I started learning javascript and was even more
-            enthused with making websites interactive. I then started
-            freelancing for e-commerce companies on the Shopify platform. I am
-            now spending my time building projects with React JS, Firebase, and
-            learning new technologies.
+            I started web developement in 2013 managing multiple e-commerce
+            websites on CMS platforms such as WordPress, BigCommerce, and
+            Shopify. I have experience working directly with clients and taking
+            mock wireframes all the way to deployed applications. In my spare
+            time I run "Code Commerce", a Youtube channel where I teach web
+            developement and various front-end technologies.
           </p>
           <Link href='/#projects'>
             <p className='py-2 text-gray-600 underline cursor-pointer'>
